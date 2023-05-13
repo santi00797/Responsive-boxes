@@ -1,0 +1,51 @@
+body {
+  background: blanchedalmond;
+}
+
+.container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 30px;
+}
+
+.a,
+.b,
+.c {
+  background-color: #d8d8d8;
+  border: 1px solid #5e5d5d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.a,
+.c {
+  flex: 1;
+}
+
+.b {
+  flex: 5;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .a {
+    flex-basis: 100%;
+  }
+
+
+  .b {
+    flex: 1;
+  }
+
+  .c {
+    flex: 1;
+  }
+}
